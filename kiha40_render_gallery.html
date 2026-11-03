@@ -1,0 +1,15 @@
+﻿<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>キハ40 側面画像 — 301・331・351・401・708・1701</title>
+<style>
+body{margin:24px;background:#202226;color:#eee;font:16px/1.7 sans-serif}h1{font-size:25px}h2{font-size:21px;margin-bottom:4px}a{color:#add7ff}figure{margin:12px 0}figcaption{display:flex;gap:16px;align-items:center}.image{display:block;overflow:auto;background-color:#c4c4c4;background-image:linear-gradient(45deg,#ddd 25%,transparent 25%),linear-gradient(-45deg,#ddd 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#ddd 75%),linear-gradient(-45deg,transparent 75%,#ddd 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}.image img{display:block;width:100%;height:auto}section{padding:12px 0 24px;border-bottom:1px solid #555}nav a{margin-right:20px}p{max-width:1000px}select{font:inherit;padding:4px;margin-left:8px}
+</style>
+<h1>キハ40 側面画像</h1>
+<p>301・331・351・401・708・1701。各車のJSに従った描画＋B補正。カスタムボタンはすべて初期状態、停車・非連結・ドア閉です。各PNGは4096×850px、背景透明です。市松模様はこのページの背景で、PNGには入りません。</p>
+<nav id="nav"></nav><label>表示倍率<select id="zoom"><option value="fit">全体</option><option value="1">100%</option><option value="2">200%</option></select></label>
+<main id="gallery"></main>
+<p>照明は確認用の簡易照明です。元のモデル・テクスチャは変更していません。351の車両JSは、C-TREC &amp; 月島重工 制作のRTM車両動揺JSを使用しています。</p>
+<script>
+const numbers=[301,331,351,401,708,1701];for(const n of numbers){const link=document.createElement('a');link.href='#n'+n;link.textContent=n;document.querySelector('#nav').append(link);const section=document.createElement('section');section.id='n'+n;const title=document.createElement('h2');title.textContent='キハ40 '+n;section.append(title);for(const [side,label]of [['plusX','側面']]){const file='images/kiha40_'+n+'_side_'+side+'.png',figure=document.createElement('figure'),caption=document.createElement('figcaption'),save=document.createElement('a');caption.append(label+'　');save.href=file;save.download='';save.textContent='透過PNGを保存';caption.append(save);const frame=document.createElement('div');frame.className='image';const img=document.createElement('img');img.src=file;img.alt='キハ40 '+n+' '+label;img.width=4096;img.height=850;frame.append(img);figure.append(caption,frame);section.append(figure);}document.querySelector('#gallery').append(section);}document.querySelector('#zoom').onchange=e=>{for(const img of document.querySelectorAll('.image img'))img.style.width=e.target.value==='fit'?'100%':4096*Number(e.target.value)+'px';};
+</script></html>
+

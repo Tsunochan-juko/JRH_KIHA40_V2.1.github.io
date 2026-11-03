@@ -1,0 +1,10 @@
+ウソ電フォント - Kokutetsu
+Web font: Usoden-Kokutetsu.woff2
+
+配布元: Midari Create
+https://create.2pd.jp/fonts/usoden-kokutetsu/
+
+配布元の説明では、本フォントは無権利創作宣言に基づき著作権を放棄し、営利・非営利を問わず複製・改変・転載等が可能とされています。
+フォントは非公式に制作された国鉄車番書体の再現フォントです。
+
+このWebサイトでは車両番号表示に使用しています。
