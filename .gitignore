@@ -1,0 +1,10 @@
+# Backup and restore folders, including nested pack snapshots
+**/backup/
+**/backups/
+**/backup_*/
+**/backups_*/
+**/*_backup/
+**/*_backups/
+**/*_backup_*/
+**/*_backups_*/
+**/soundpack_backups/
